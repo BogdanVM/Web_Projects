@@ -1,0 +1,138 @@
+/* ------------------  FONTS --------------------- */
+@font-face {
+	font-family: kohoReg;
+	src: url('../Fonts/KoHo-Regular.ttf');
+}
+
+@font-face {
+	font-family: krubReg;
+	src: url('../Fonts/Krub-Regular.ttf');
+}
+
+@font-face {
+	font-family: ptSans;
+	src: url('../Fonts/PT_Sans-Narrow-Web-Regular.ttf');
+}
+
+@font-face {
+	font-family: titiliumReg;
+	src: url('../Fonts/TitilliumWeb-Regular.ttf');
+}
+
+/* ------------------  NAV AND BODY -------------- */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#myNav {
+	
+	margin: 0;
+	padding: 0;
+
+	width: 100vw;
+	text-align: center;
+	background: #fff;
+	border: 1px solid #000;
+    
+    position: relative;
+    z-index: 9999;
+}
+
+#myNav a{
+	text-decoration: none;
+	
+	padding: 30px;
+	display: inline-block;
+
+	font-family: kohoReg;
+	font-size: 1.1em;
+}
+
+ul {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+.menuItem li {
+	position: relative;
+	display: inline-block;
+}
+
+.menuItem li a {
+    color: #000;
+}
+
+.menuItem li:hover {
+	background: #9ca1a8;
+}
+
+.menuItem li:hover .dropdown {
+	display: block;
+}
+
+.menuItem li .dropdown {
+	position: absolute;
+	width: 100%;
+	display: none;
+}
+
+.menuItem li .dropdown li {
+	display: block;
+	background: #464849;
+}
+
+.menuItem li .dropdown li a {
+	color: white;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.menuItem li .dropdown li:hover {
+	background: #b0b1b2;
+    
+}
+
+/* ---------------------  CONTENT SECTION  ---------------------*/
+#contentSection {
+	
+	font-family: ptSans;
+	
+	text-align: center;
+}
+
+/* ---------------------  OPTIONS MAIN PAGE ------------------*/
+#options {
+	margin-top: 50px;
+	background: #79797a;
+	color: white;
+    text-align: center;
+}
+
+#options > p {
+	font-family: kohoReg;
+	font-size: 2em;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #000;
+    background: #404244;
+}
+
+#buttons > a {
+    display: block;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    
+    margin-top: 30px;   
+    
+    padding-bottom: 30px;
+    
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-family: ptSans;
+    font-size: 2em;
+}
+
+#buttons > a:hover {
+    color: #000;
+}
