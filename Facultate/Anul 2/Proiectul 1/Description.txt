@@ -21,8 +21,9 @@ my home country as well.
 --------------------------------- WORLD -----------------------------------
 
 If you choose the world option ( from either the navbar or the front page menu )
-you are prompted to a list of continents to choose from. Since these was a college project, I did not implement all the continents. For now the user can browse
-through a few European countries.
+you are prompted to a list of continents to choose from. 
+Since these was a college project, I did not implement all the continents. 
+For now the user can browse through a few European countries.
 
 So, if the Europe option is chosen, a table is displayed with a few countries to
 pick from. If the user selects one country from that table, he is prompted to a 
