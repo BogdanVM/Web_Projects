@@ -34,27 +34,31 @@ nav ul li {
     margin-right: 50px;
 }
 
-.nav-link {
+#navbarSupportedContent>ul>li>a {
+
+    color: #000;
     font-family: twebReg;
     font-size: 1.5em;
 
     transition: .5s color ease;
-    
 }
 
-.nav-link::after {
+#navbarSupportedContent>ul>li>a:hover {
+    color: #1c59bc;
+}
+
+#navbarSupportedContent>ul>li>a::after {
     content: '';
     display: block;
     margin: auto;
     width: 0;
     height: 2px;
-    background: #000;
+    background: #1c59bc;
 
     transition: width 0.5s;
 }
 
-
-.nav-link:hover::after {
+#navbarSupportedContent>ul>li>a:hover::after {
     width: 100%;
 }
 
@@ -125,7 +129,7 @@ nav ul li {
 }
 
 .textContent {
-    
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -133,7 +137,7 @@ nav ul li {
 }
 
 .textContent h1 {
-    
+
     color: #fff;
     font-family: ptSansReg;
     text-shadow: 1px 1px 1px solid #000;
@@ -173,7 +177,7 @@ nav ul li {
     transform: scale(1.5, 1.5);
 }
 
-/* -------------------- PATHS -------------------- */ 
+/* -------------------- PATHS -------------------- */
 .options {
     width: 50%;
     display: flex;
@@ -189,35 +193,22 @@ nav ul li {
     display: flex;
     flex: 1;
     flex-flow: column nowrap;
-    
+
     padding: 1em;
-    border: 3px solid #0f0;
+
 }
 
-#algorithms p {
-    flex-grow: 1;
+#algorithms {
+    background: linear-gradient(#086391, #184f99, #0c1e92);
+    border: 3px solid linear-gradient(#086391, #184f99, #0c1e92);
+}
+
+#tutorials {
+    background: linear-gradient(#0bbf26, #108206, #03440d);
+    border: 3px solid linear-gradient(#0bbf26, #108206, #03440d);
 }
 
 .choosePath {
     width: 100%;
     margin-top: auto;
-}
-
-#expandBtn {
-    display: none;
-}
-
-/* ------------------- MEDIA QUERIES ----------------- */
-@media screen and (max-width: 750px) {
-
-
-    .stickyFooter {
-        position: relative;
-        bottom: 0;
-    }
-
-    .blurredImg {
-        height: 100%;
-    }
-
 }

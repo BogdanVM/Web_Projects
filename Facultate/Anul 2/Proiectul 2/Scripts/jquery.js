@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".blurredImg").hide(0).fadeIn("slow");
     $(".nav-item-dropdown").hover(
         function() {
             $(".dropdown-menu").stop(true, true).delay(200).fadeIn(200);
