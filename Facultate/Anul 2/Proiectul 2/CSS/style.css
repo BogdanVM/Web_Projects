@@ -19,6 +19,15 @@
     src: url('../Fonts/PT_Sans-Web-Regular.ttf');
 }
 
+@keyframes colorBla {
+    from { color: #fff; }
+    to { color: #0f0; }
+}
+
+@keyframes colorBlaRed {
+    from { color: #fff; }
+    to { color: #f00; }
+}
 /*  -------------------- HEADER --------------------- */
 
 * {
@@ -81,15 +90,12 @@ nav ul li {
 .dropdown-menu li {
     border-bottom: 1px solid #000;
 
-    transition: 0.5s background, color;
+    transition: 0.5s background;
 }
 
 .dropdown-menu li:hover {
     background: #00e237;
-}
-
-.dropdown-menu li:hover a {
-    color: #000;
+    cursor: pointer;
 }
 
 .dropdown-menu li a {
@@ -140,8 +146,20 @@ nav ul li {
 
     color: #fff;
     font-family: ptSansReg;
-    text-shadow: 1px 1px 1px solid #000;
+    text-shadow: 1px 1px 1px #000;
     font-size: 3.5em;
+}
+
+.textContent h1 span:nth-of-type(2n) {
+    animation-name: colorBla;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.textContent h1 span:nth-of-type(2n + 1) {
+    animation-name: colorBlaRed;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 .textContent p {
@@ -174,7 +192,7 @@ nav ul li {
 
 .stickyFooter a i:hover {
     color: #00f;
-    transform: scale(1.5, 1.5);
+    transform: scale(1.5, 1.5) rotate(-90deg);
 }
 
 /* -------------------- PATHS -------------------- */
@@ -199,16 +217,29 @@ nav ul li {
 }
 
 #algorithms {
-    background: linear-gradient(#086391, #184f99, #0c1e92);
-    border: 3px solid linear-gradient(#086391, #184f99, #0c1e92);
+    background: linear-gradient(#071a38, #000711, #010307);
 }
 
 #tutorials {
-    background: linear-gradient(#0bbf26, #108206, #03440d);
-    border: 3px solid linear-gradient(#0bbf26, #108206, #03440d);
+    background: linear-gradient(#3d3d3d, #212121, #000000);
 }
 
-.choosePath {
+.stdBtn {
     width: 100%;
     margin-top: auto;
+
+    background: transparent;
+    color: #fff;
+    font-family: twebReg;
+    font-size: 1.3em;
+    border: 3px solid #fff;
+
+    transition: 0.3s all ease-in;
+}
+
+.stdBtn:hover {
+    background: #fff;
+    color: #000;
+
+    cursor: pointer;
 }

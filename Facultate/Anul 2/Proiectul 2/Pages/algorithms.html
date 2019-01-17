@@ -17,10 +17,11 @@
 
     <script src="../Scripts/jquery.js"></script>
     <script src="../Scripts/inputs.js"></script>
+    <script src="../Scripts/toggle.js"></script>
+    <script src="../Scripts/main.js"></script>
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -40,7 +41,8 @@
 
                         <div class="dropdown">
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"> <a href="#"> Sorting algorithms </a></li>
+                                <li class="dropdown-item"> <a href="genericAlgPage.html?Sort&Introduction">
+                                    Sorting algorithms </a></li>
                                 <li class="dropdown-item"> <a href="#"> Divide et impera </a></li>
                                 <li class="dropdown-item"> <a href="#"> Greedy </a></li>
                                 <li class="dropdown-item"> <a href="#"> Dynamic programming </a></li>
@@ -49,7 +51,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="tutorials.html"> TUTORIALS </a>
+                        <a class="nav-link" href="quiz.html"> QUIZ </a>
                     </li>
 
                     <li class="nav-item">
@@ -69,18 +71,9 @@
                 <p> Sorting algorithms are essential for any programmer.
                 This is a complete guide through the
                 most important sorting algorithms. </p>
-
-                <ul class="lessons">
-                    <li> <a href="#"> Introduction </a></li>
-                    <li> <a href="#"> The Basic Sorting Algorithm </a></li>
-                    <li> <a href="#"> Bubble Sort </a></li>
-                    <li> <a href="#"> Insertion Sort </a></li>
-                    <li> <a href="#"> Selection Sort </a></li>
-                    <li> <a href="#"> Quick Sort </a></li>
-                </ul>
             </div>
 
-            <a href="#" class="btn btn-primary"> SORTING ALGORITHMS </a>
+            <a href="genericAlgPage.html?Sort&Introduction" class="stdBtn goToLesson"> SORTING ALGORITHMS </a>
         </div>
 
         <div class="container" id="divei">
@@ -89,16 +82,9 @@
                 <p> Divide and Rule (aka Divide et Impera) is a widely used
                 programming technique. This is a large set of problems solved using
                 this method that can help anyone master this technique. </p>
-
-                <ul class="lessons">
-                    <li> <a href="#"> Introduction </a></li>
-                    <li> <a href="#"> Sum  </a></li>
-                    <li> <a href="#"> Maximum and Minimum </a></li>
-                    <li> <a href="#"> Hanoi Towers </a></li>
-                </ul>
             </div>
 
-            <a href="#" class="btn btn-primary"> DIVIDE ET IMPERA </a>
+            <a href="#diveiLessons" class="stdBtn goToLesson"> DIVIDE ET IMPERA </a>
         </div>
 
         <div class="container" id="greedy">
@@ -108,24 +94,62 @@
                 <p> Greedy is a very intuitive, yet commonly used, programming
                 technique. After browsing through our set of problems, this
                 method will not seem as difficult as before. </p>
+            </div>
 
-                <ul class="lessons">
+            <a href="#greedyLessons" class="stdBtn goToLesson"> GREEDY </a>
+        </div>
+    </div>
+
+    <div class="lessons">
+        <div id="sortLessons">
+            <div class="visible">
+                <h2> SORTING ALGORITHMS </h2>
+                <span> <i class="fa fa-angle-down"> </i> </span>
+            </div>
+
+            <div class="hidden">
+                <ul class="chapters">
+                    <li> <a href="genericAlgPage.html?Sort&Introduction"> Introduction </a></li>
+                    <li> <a href="genericAlgPage.html?Sort&Bubble"> Bubble Sort </a></li>
+                    <li> <a href="genericAlgPage.html?Sort&Insertion"> Insertion Sort </a></li>
+                    <li> <a href="genericAlgPage.html?Sort&Selection"> Selection Sort </a></li>
+                    <li> <a href="genericAlgPage.html?Sort&Qsort"> Quick Sort </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="diveiLessons">
+            <div class="visible">
+                <h2> DIVIDE ET IMPERA </h2>
+                <span> <i class="fa fa-angle-down"> </i> </span>
+            </div>
+
+            <div class="hidden">
+                <ul class="chapters">
+                    <li> <a href="#"> Introduction </a></li>
+                    <li> <a href="#"> Sum  </a></li>
+                    <li> <a href="#"> Maximum and Minimum </a></li>
+                    <li> <a href="#"> Hanoi Towers </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="greedyLessons">
+            <div class="visible">
+                <h2> GREEDY </h2>
+                <span> <i class="fa fa-angle-down"> </i> </span>
+            </div>
+
+            <div class="hidden">
+                <ul class="chapters">
                     <li> <a href="#"> Introduction </a></li>
                     <li> <a href="#"> The Backpack </a></li>
                     <li> <a href="#"> Scheduling Problems </a></li>
                 </ul>
             </div>
-
-            <a href="#" class="btn btn-primary"> GREEDY </a>
         </div>
-    </div>
 
-    <footer class="stickyFooter">
-        <a href="#"> <i class="fab fa-facebook"> </i></a>
-        <a href="#"> <i class="fab fa-instagram"> </i></a>
-        <a href="#"> <i class="fab fa-twitter"> </i></a>
-        <a href="#"> <i class="fab fa-github"> </i></a>
-    </footer>
+    </div>
 </body>
 
 </html>

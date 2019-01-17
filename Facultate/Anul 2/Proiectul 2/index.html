@@ -16,6 +16,7 @@
 
     <script src="Scripts/jquery.js"></script>
     <script src="Scripts/inputs.js"></script>
+    <script src="Scripts/main.js"></script>
 </head>
 
 <body>
@@ -39,7 +40,8 @@
 
                         <div class="dropdown">
                             <ul class="dropdown-menu">
-                                <li class="dropdown-item"> <a href="#"> Sorting algorithms </a></li>
+                                <li class="dropdown-item"> <a href="Pages/genericAlgPage.html?Sort&Introduction">
+                                    Sorting algorithms </a></li>
                                 <li class="dropdown-item"> <a href="#"> Divide et impera </a></li>
                                 <li class="dropdown-item"> <a href="#"> Greedy </a></li>
                                 <li class="dropdown-item"> <a href="#"> Dynamic programming </a></li>
@@ -48,7 +50,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="Pages/tutorials.html"> TUTORIALS </a>
+                        <a class="nav-link" href="Pages/quiz.html"> QUIZ </a>
                     </li>
 
                     <li class="nav-item">
@@ -66,20 +68,20 @@
 
          <div class="foreground">
            <div class="textContent">
-                <h1> Welcome to Bla Bla Code </h1>
+               <h1> Welcome to <span>Bla</span> <span>Bla</span> Code </h1>
                 <p> Best tutorials and courses you'll find </p>
                 <p> Choose your path: </p>
 
                 <div class="options">
                     <div class="path" id="algorithms">
                         <p> Choose this path if you wish to learn important and vital algorithms </p>
-                        <input type="button" value="ALGORITHMS" class="btn btn-success choosePath">
+                        <input type="button" value="ALGORITHMS" class="choosePath stdBtn">
                     </div>
 
                     <div class="path" id="tutorials">
                         <p> Choose this path if you wish to strengthen your programming
-                            knowledge with masterclass tutorials </p>
-                        <input type="button" value="TUTORIALS" class="btn btn-primary choosePath">
+                            knowledge with masterclass quizzes </p>
+                        <input type="button" value="QUIZ" class="choosePath stdBtn">
                     </div>
                 </div>
            </div>
